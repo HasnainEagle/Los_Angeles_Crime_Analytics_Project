@@ -24,7 +24,3 @@ The goal of this project is to analyze crime patterns in Los Angeles, identify t
 - Python:Pandas, NumPy  
 - MySQL(for insights extraction)  
 - Power BI:Interactive dashboards and visualizations  
-
-
-   git clone https://github.com/yourusername/la-crime-analysis.git
-
