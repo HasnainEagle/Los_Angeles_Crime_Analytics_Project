@@ -218,33 +218,6 @@ SQL was used to validate the accuracy of transformed data.
 * Cross-check dashboard calculations
 * Ensure consistency between source and reporting layers
 
-### Sample SQL Validation Queries
-
-```sql
--- Total Crime Records
-SELECT COUNT(*) AS Total_Crimes
-FROM crime_data;
-```
-
-```sql
--- Crimes By Area
-SELECT AREA_NAME, COUNT(*) AS Crime_Count
-FROM crime_data
-GROUP BY AREA_NAME
-ORDER BY Crime_Count DESC;
-```
-
-```sql
--- Crimes By Year
-SELECT YEAR(Date_Occurred) AS Crime_Year,
-       COUNT(*) AS Total_Crimes
-FROM crime_data
-GROUP BY YEAR(Date_Occurred)
-ORDER BY Crime_Year;
-```
-
----
-
 # 📌 Dashboard KPIs
 
 | KPI                   | Description                  |
@@ -255,20 +228,6 @@ ORDER BY Crime_Year;
 | High Crime Areas      | Areas with maximum incidents |
 | Peak Crime Time       | Most active crime periods    |
 | Crime Category Trends | Most frequent crime types    |
-
----
-
-# 📷 Dashboard Preview
-
-## Crime Overview Dashboard
-
-*Add dashboard screenshot here*
-
-## Crime Detailed Dashboard
-
-*Add dashboard screenshot here*
-
----
 
 # 🚀 Future Improvements
 
@@ -295,37 +254,12 @@ This project helped strengthen practical skills in:
 * Power BI dashboard development
 * Business insight generation
 
----
-
-# 📁 Project Structure
-
-```text
-Los-Angeles-Crime-Analytics/
-│
-├── Dataset/
-│   └── crime_dataset.csv
-│
-├── SQL/
-│   └── validation_queries.sql
-│
-├── PowerBI/
-│   └── los_angeles_crime_dashboard.pbix
-│
-├── Images/
-│   └── dashboard_screenshots
-│
-└── README.md
-```
-
----
 
 # 💡 Conclusion
 
 Behind every data point is a real-world incident. By analyzing crime trends, patterns, and severity, this project provides actionable insights that can support smarter policing strategies and better public safety planning.
 
 The dashboard demonstrates how data analytics can transform raw crime records into meaningful and impactful decision-making tools.
-
----
 
 # 👨‍💻 Author
 
@@ -337,19 +271,3 @@ The dashboard demonstrates how data analytics can transform raw crime records in
 * Skilled in SQL, Python, Excel, and Power BI
 * Experience in Data Cleaning, ETL, Data Modeling & Dashboards
 * Currently Learning Cloud Data Engineering
-
----
-
-# ⭐ Project Resources
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
-
----
-
-# 📬 Contact
-
-For collaboration, feedback, or opportunities:
-
-* LinkedIn: Add your LinkedIn profile
-* GitHub: Add your GitHub profile
-* Email: Add your email address
